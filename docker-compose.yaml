@@ -15,7 +15,7 @@ services:
   mysql:
   image: mysql:v1.0.0
   # image: charan466/mysql:1.0.0
-  container_name: mysql # -- name mysql
+  container_name: mysql1 # -- name mysql
   volumes:
     - source: mysql # - mysql1:/var/lib/mysql 
       target: /var/lib/mysql
