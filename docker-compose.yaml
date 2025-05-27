@@ -8,7 +8,7 @@ volumes:
 services:
   mysql:
     image: mysql:v1.0.0
-    container_name: mysql1 # --name mysql
+    container_name: mysql12 # --name mysql
     volumes:
     - mysql:/var/lib/mysql # -v volume-name:/path-in-container
   
