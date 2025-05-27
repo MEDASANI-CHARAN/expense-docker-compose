@@ -4,7 +4,7 @@ networks:
   default:
     name: expense
 volumes:
-  mysql2: # docker volume create mysql
+  mysql: # docker volume create mysql
 services:
   # mysql:
   #   image: mysql:v1.0.0
@@ -17,7 +17,7 @@ services:
   # image: charan466/mysql:1.0.0
   container_name: mysql3 # -- name mysql
   volumes:
-    - source: mysql2 # - mysql1:/var/lib/mysql 
+    - source: mysql # - mysql1:/var/lib/mysql 
       target: /var/lib/mysql
       type: volume # -v <volume-name>:/path/in/container
 
