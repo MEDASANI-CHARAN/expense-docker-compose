@@ -16,7 +16,7 @@ services:
     image: frontend:v1.0.0
     container_name: frontend # --name frontend
     depends_on:
-      - mysql
+      - backend
     ports:
     - "80:80"
 
