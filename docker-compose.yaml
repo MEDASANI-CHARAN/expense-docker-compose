@@ -4,11 +4,11 @@ networks:
   default:
     name: expense
 volumes:
-  mysql1: # docker volume create mysql
+  mysql2: # docker volume create mysql
 services:
   mysql1:
     image: mysql:v1.0.0
-    container_name: mysql12 # --name mysql
+    container_name: mysql1 # --name mysql
     volumes:
     - mysql:/var/lib/mysql # -v volume-name:/path-in-container
   
