@@ -4,7 +4,7 @@ networks:
   default:
     name: expense
 volumes:
-  mysql2: # docker volume create mysql
+  mysql1: # docker volume create mysql
 services:
   mysql1:
     image: mysql:v1.0.0
