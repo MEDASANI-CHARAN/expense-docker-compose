@@ -20,7 +20,7 @@ services:
     - source: mysql # - mysql1:/var/lib/mysql 
       target: /var/lib/mysql
       type: volume # -v <volume-name>:/path/in/container
-
+ 
   backend:
     image: backend:v1.0.0
     container_name: backend # --name backend
