@@ -10,7 +10,7 @@ services:
     image: mysql:v1.0.0
     container_name: mysql4 # --name mysql
     volumes:
-    - mysql3:/var/lib/mysql # -v volume-name:/path-in-container
+    - mysql1:/var/lib/mysql # -v volume-name:/path-in-container
   
   # mysql:
   # image: mysql:v1.0.0
