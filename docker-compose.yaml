@@ -6,18 +6,18 @@ networks:
 volumes:
   mysql: # docker volume create mysql
 services:
-  mysql:
-    image: mysql:v1.0.0
-    container_name: mysql # --name mysql
-    volumes:
-    - mysql:/var/lib/mysql # -v volume-name:/path-in-container
-  
   # mysql:
-  # image: mysql:v1.0.0
-  # # image: charan466/mysql:1.0.0
-  # container_name: mysql # -- name mysql
+  #   image: mysql:v1.0.0
+  #   container_name: mysql # --name mysql
+  #   volumes:
+  #   - mysql:/var/lib/mysql # -v volume-name:/path-in-container
+  
+  mysql:
+  image: mysql:v1.0.0
+  # image: charan466/mysql:1.0.0
+  container_name: mysql # -- name mysql
   # volumes:
-  #   - source: mysq # - mysql1:/var/lib/mysql 
+  #   - source: mysql # - mysql1:/var/lib/mysql 
   #     target: /var/lib/mysql
   #     type: volume # -v <volume-name>:/path/in/container
 
