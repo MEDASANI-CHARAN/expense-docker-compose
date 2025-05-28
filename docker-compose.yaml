@@ -7,7 +7,7 @@ volumes:
   mysql: # docker volume create mysql
 services:
   mysql:
-  image: mysql:v1.0.0
+  image: mysql:1.0.0
   container_name: mysql # -- name mysql
   # volumes:
   #   - source: mysql # - mysql1:/var/lib/mysql 
