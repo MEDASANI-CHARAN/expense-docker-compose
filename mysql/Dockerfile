@@ -7,4 +7,4 @@ RUN adduser -r expense
 #     MYSQL_DATABASE=transactions
 RUN chown -R expense:expense /var/lib/mysql /var/run/mysqld
 COPY scripts/*.sql /docker-entrypoint-initdb.d/
-USER expense
+# USER expense
