@@ -1,6 +1,6 @@
 FROM node:24.1.0-alpine3.20
 EXPOSE 8080
-RUN useradd expense
+RUN addgroup -S expense && adduser -S expense -G expense
 RUN mkdir /opt/server
 WORKDIR /opt/server
 RUN chown expense:expense -R /opt/server
