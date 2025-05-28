@@ -3,8 +3,8 @@ version: "3.8"
 networks:
   default:
     name: expense
-# volumes:
-#   mysql: # docker volume create mysql
+volumes:
+  mysql: # docker volume create mysql
 services:
   mysql:
     image: mysql:v1.0.0
@@ -14,10 +14,10 @@ services:
       - MYSQL_USER=expense
       - MYSQL_PASSWORD=ExpenseApp@1
       - MYSQL_DATABASE=transactions
-    # volumes:
-    #   - source: mysql # - mysql1:/var/lib/mysql 
-    #     target: /var/lib/mysql
-    #     type: volume # -v <volume-name>:/path/in/container
+    volumes:
+      - source: mysql # - mysql1:/var/lib/mysql 
+        target: /var/lib/mysql
+        type: volume # -v <volume-name>:/path/in/container
 
   # mysql:
   #   image: mysql:v1.0.0
